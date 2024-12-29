@@ -1,1 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FDM Analysis - Luis Jacobo</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <a href="../index.html" class="inline-flex items-center text-gray-700 hover:text-blue-600 transition-colors">
+                <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                </svg>
+                Back to Portfolio
+            </a>
+        </div>
+    </header>
 
+    <!-- Hero Section -->
+    <div class="pt-16">
+        <!-- Banner Images -->
+        <div class="grid grid-cols-3 h-64">
+            <div class="overflow-hidden">
+                <img src="https://wallpapers.com/images/hd/coding-background-9izlympnd0ovmpli.jpg" 
+                     alt="Project Image 1" 
+                     class="w-full h-full object-cover">
+            </div>
+            <div class="overflow-hidden">
+                <img src="https://wallpapers.com/images/hd/coding-background-9izlympnd0ovmpli.jpg" 
+                     alt="Project Image 2" 
+                     class="w-full h-full object-cover origin-center rotate-90 scale-150">
+            </div>
+            <div class="overflow-hidden">
+                <img src="https://wallpapers.com/images/hd/coding-background-9izlympnd0ovmpli.jpg" 
+                     alt="Project Image 3" 
+                     class="w-full h-full object-cover">
+            </div>
+        </div>
+        
+        <!-- Title and Timeline Section -->
+        <div class="bg-white shadow-md">
+            <div class="container mx-auto px-6 py-8">
+                <h1 class="text-4xl font-bold text-gray-800 mb-4">FDM Structural Analysis</h1>
+                <div class="flex flex-wrap gap-4">
+                    <span class="text-gray-600">January 2024 - Present</span>
+                    <span class="text-gray-600">Research Project</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+        <!-- Project Overview -->
+        <div class="bg-white rounded-lg shadow-md p-8 mb-12">
+            <h2 class="text-2xl font-bold mb-6">Project Overview</h2>
+            <p class="text-gray-600 mb-6">
+                This research project focuses on developing a novel method to predict delamination in FDM 3D printed models. 
+                By combining Finite Element Modeling, NASMAT, Python, and the generalized Method of cells, we aim to enhance 
+                the understanding and prediction of structural behavior in 3D printed components.
+            </p>
+            <h3 class="font-bold text-lg mb-4">Key Responsibilities:</h3>
+            <ul class="list-disc list-inside text-gray-600 space-y-2">
+                <li>Developed computational models using Python and NASMAT</li>
+                <li>Implemented Finite Element Analysis for structural predictions</li>
+                <li>Created algorithms for delamination prediction</li>
+                <li>Validated models through experimental testing</li>
+            </ul>
+        </div>
+
+        <!-- Project Gallery -->
+        <div class="bg-white rounded-lg shadow-md p-8">
+            <h2 class="text-2xl font-bold mb-6">Project Gallery</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="space-y-2">
+                    <div class="aspect-video bg-gray-100 rounded-lg overflow-hidden">
+                        <img src="https://wallpapers.com/images/hd/coding-background-9izlympnd0ovmpli.jpg" 
+                             alt="FEA Analysis" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <p class="text-gray-600 text-center">Finite Element Analysis Results</p>
+                </div>
+                <div class="space-y-2">
+                    <div class="aspect-video bg-gray-100 rounded-lg overflow-hidden">
+                        <img src="https://wallpapers.com/images/hd/coding-background-9izlympnd0ovmpli.jpg" 
+                             alt="Code Implementation" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <p class="text-gray-600 text-center">Python Implementation</p>
+                </div>
+                <div class="space-y-2">
+                    <div class="aspect-video bg-gray-100 rounded-lg overflow-hidden">
+                        <img src="https://wallpapers.com/images/hd/coding-background-9izlympnd0ovmpli.jpg" 
+                             alt="Testing Setup" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <p class="text-gray-600 text-center">Experimental Validation Setup</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Luis Jacobo Mejia. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
