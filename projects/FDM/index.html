@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FDM Analysis - Luis Jacobo</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="icon" href="https://github.com/Luisjacobo2301/Luisjacobo2301.github.io/blob/main/icon2.png?raw=true">
 </head>
 <body class="bg-gray-50">
     <!-- Header/Navigation -->
@@ -24,17 +25,17 @@
         <!-- Banner Images -->
         <div class="grid grid-cols-3 h-64">
             <div class="overflow-hidden">
-                <img src="https://wallpapers.com/images/hd/coding-background-9izlympnd0ovmpli.jpg" 
+                <img src="https://luisjacobo2301.github.io/projects/FDM/gcode_plot1.png" 
                      alt="Project Image 1" 
                      class="w-full h-full object-cover">
             </div>
             <div class="overflow-hidden">
-                <img src="https://wallpapers.com/images/hd/coding-background-9izlympnd0ovmpli.jpg" 
+                <img src="https://luisjacobo2301.github.io/projects/FDM/gcode_plot2.png" 
                      alt="Project Image 2" 
-                     class="w-full h-full object-cover origin-center rotate-90 scale-150">
+                     class="w-full h-full object-cover">
             </div>
             <div class="overflow-hidden">
-                <img src="https://wallpapers.com/images/hd/coding-background-9izlympnd0ovmpli.jpg" 
+                <img src="https://luisjacobo2301.github.io/projects/FDM/abaqus_result.png" 
                      alt="Project Image 3" 
                      class="w-full h-full object-cover">
             </div>
@@ -43,9 +44,9 @@
         <!-- Title and Timeline Section -->
         <div class="bg-white shadow-md">
             <div class="container mx-auto px-6 py-8">
-                <h1 class="text-4xl font-bold text-gray-800 mb-4">FDM Structural Analysis</h1>
+                <h1 class="text-4xl font-bold text-gray-800 mb-4">FDM G-Code Analysis</h1>
                 <div class="flex flex-wrap gap-4">
-                    <span class="text-gray-600">January 2024 - Present</span>
+                    <span class="text-gray-600">May 2024 - June 2024</span>
                     <span class="text-gray-600">Research Project</span>
                 </div>
             </div>
@@ -56,48 +57,52 @@
     <main class="container mx-auto px-6 py-12">
         <!-- Project Overview -->
         <div class="bg-white rounded-lg shadow-md p-8 mb-12">
-            <h2 class="text-2xl font-bold mb-6">Project Overview</h2>
-            <p class="text-gray-600 mb-6">
-                This research project focuses on developing a novel method to predict delamination in FDM 3D printed models. 
-                By combining Finite Element Modeling, NASMAT, Python, and the generalized Method of cells, we aim to enhance 
-                the understanding and prediction of structural behavior in 3D printed components.
-            </p>
-            <h3 class="font-bold text-lg mb-4">Key Responsibilities:</h3>
-            <ul class="list-disc list-inside text-gray-600 space-y-2">
-                <li>Developed computational models using Python and NASMAT</li>
-                <li>Implemented Finite Element Analysis for structural predictions</li>
-                <li>Created algorithms for delamination prediction</li>
-                <li>Validated models through experimental testing</li>
-            </ul>
-        </div>
+    <h2 class="text-2xl font-bold mb-6">Project Overview</h2>
+    <p class="text-gray-600 mb-6">
+        Developed a novel Python-based G-code interpreter to bridge the gap between additive manufacturing and finite element analysis. The project addresses a critical need in the field of fused deposition modeling (FDM), where the lack of standardized methodologies for material testing and characterization has limited our understanding of 3D printed components' mechanical properties. Through the development of sophisticated parsing algorithms, the interpreter processes G-code files from 3D printing slicers to extract geometric information and generate Abaqus input files for finite element analysis (FEA).
+
+        The script implements several key features, including user-interactive point selection for detailed analysis of specific layers or segments, automated calculation of element orientations and lengths, and comprehensive 3D visualization of G-code geometry. By translating the printer's path instructions into a format compatible with FEA software, the project enables engineers to better predict and analyze the structural behavior of 3D printed components before physical production.
+
+        While successfully demonstrating the feasibility of automated FEA model generation from 3D printing data, the project also identified important areas for future development, particularly in geometry representation and optimization of the translation process. This work represents a significant step toward standardizing the analysis of 3D printed structures and improving our ability to predict their mechanical properties.
+    </p>
+    <h3 class="font-bold text-lg mb-4">Key Responsibilities:</h3>
+    <ul class="list-disc list-inside text-gray-600 space-y-2">
+        <li>Developed Python scripts for parsing and interpreting G-code data from 3D printer slicers</li>
+        <li>Implemented algorithms for calculating element orientations and geometric properties</li>
+        <li>Created interactive visualization tools for 3D geometry representation</li>
+        <li>Designed functions for generating Abaqus input files from processed G-code data</li>
+        <li>Optimized code for handling complex geometric structures and layer transitions</li>
+        <li>Documented methodology and results for future development and implementation</li>
+    </ul>
+</div>
 
         <!-- Project Gallery -->
         <div class="bg-white rounded-lg shadow-md p-8">
             <h2 class="text-2xl font-bold mb-6">Project Gallery</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="space-y-2">
-                    <div class="aspect-video bg-gray-100 rounded-lg overflow-hidden">
-                        <img src="https://wallpapers.com/images/hd/coding-background-9izlympnd0ovmpli.jpg" 
-                             alt="FEA Analysis" 
-                             class="w-full h-full object-cover">
+                <div class="flex flex-col h-64">
+                    <div class="aspect-video bg-gray-100 rounded-lg overflow-hidden h-48">
+                        <img src="https://luisjacobo2301.github.io/projects/FDM/point_list.png" 
+                             alt="G-Code Analysis" 
+                             class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
                     </div>
-                    <p class="text-gray-600 text-center">Finite Element Analysis Results</p>
+                    <p class="text-gray-600 text-center mt-auto">G-Code Point Analysis</p>
                 </div>
-                <div class="space-y-2">
-                    <div class="aspect-video bg-gray-100 rounded-lg overflow-hidden">
-                        <img src="https://wallpapers.com/images/hd/coding-background-9izlympnd0ovmpli.jpg" 
-                             alt="Code Implementation" 
-                             class="w-full h-full object-cover">
+                <div class="flex flex-col h-64">
+                    <div class="aspect-video bg-gray-100 rounded-lg overflow-hidden h-48">
+                        <img src="https://luisjacobo2301.github.io/projects/FDM/3d_plot.png" 
+                             alt="3D Visualization" 
+                             class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
                     </div>
-                    <p class="text-gray-600 text-center">Python Implementation</p>
+                    <p class="text-gray-600 text-center mt-auto">3D Visualization Results</p>
                 </div>
-                <div class="space-y-2">
-                    <div class="aspect-video bg-gray-100 rounded-lg overflow-hidden">
-                        <img src="https://wallpapers.com/images/hd/coding-background-9izlympnd0ovmpli.jpg" 
-                             alt="Testing Setup" 
-                             class="w-full h-full object-cover">
+                <div class="flex flex-col h-64">
+                    <div class="aspect-video bg-gray-100 rounded-lg overflow-hidden h-48">
+                        <img src="https://luisjacobo2301.github.io/projects/FDM/abaqus_geometry.png" 
+                             alt="Abaqus Integration" 
+                             class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
                     </div>
-                    <p class="text-gray-600 text-center">Experimental Validation Setup</p>
+                    <p class="text-gray-600 text-center mt-auto">Abaqus Integration</p>
                 </div>
             </div>
         </div>
