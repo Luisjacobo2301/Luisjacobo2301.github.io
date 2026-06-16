@@ -1,167 +1,570 @@
-<!-- Leadership & Academic Service -->
-<section id="leadership-service" class="py-20 bg-gray-50">
-    <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-12">
-            Leadership & Academic Service
-        </h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience | Luis Jacobo Mejia</title>
 
-        <div class="flex flex-col space-y-6">
+    <!-- Favicon -->
+    <link rel="icon" href="https://luisjacobo2301.github.io/Images/icon.png?raw=true">
 
-            <!-- Graduate Student Association -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transition-shadow">
-                <div class="flex flex-col md:flex-row">
-                    <div class="md:w-1/4 flex items-center justify-center p-8 bg-white">
-                        <div class="w-56 h-48 flex items-center justify-center overflow-hidden">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">  
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .dropdown-menu {
+            display: none;
+        }
+
+        .dropdown:hover .dropdown-menu,
+        .dropdown:focus-within .dropdown-menu {
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="sticky top-0 left-0 right-0 bg-white z-50">
+        <div class="container mx-auto px-6 py-4">
+            <nav class="flex items-center justify-between">
+                <a href="/index.html" class="text-3xl font-bold text-gray-800">
+                    Luis Jacobo Mejia
+                </a>
+
+                <div class="space-x-6 hidden md:flex items-center">
+
+                    <!-- Home -->
+                    <a href="/index.html" class="text-gray-600 hover:text-gray-900">Home</a>
+
+                    <!-- Projects Dropdown -->
+                    <div class="relative dropdown py-2">
+                        <a href="/Headers/Projects/" class="text-gray-600 hover:text-gray-900">
+                            Projects
+                        </a>
+
+                        <div class="dropdown-menu absolute right-0 top-full w-80 bg-white rounded-lg shadow-xl border border-gray-100 py-2 z-50">
+                            <a href="/Headers/Projects/" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                Projects Overview
+                            </a>
+
+                            <a href="/projects/CURIE'S/" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                CURIE-S / NASA L’SPACE
+                            </a>
+
+                            <a href="/projects/PEM/" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                PEM Fuel Cell Catalyst Materials
+                            </a>
+
+                            <a href="/projects/3DPAC/" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                3D Printed Aircraft Competition
+                            </a>
+
+                            <a href="/projects/FDM/" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                FDM Structural Analysis
+                            </a>
+
+                            <a href="/projects/Fuselage/" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                Fuselage FEA Analysis
+                            </a>
+
+                            <a href="/projects/PLA/" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                Mechanical Properties of PLA
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Experience Dropdown -->
+                    <div class="relative dropdown py-2">
+                        <a href="/Headers/Experience/" class="text-blue-600 font-semibold">
+                            Experience
+                        </a>
+
+                        <div class="dropdown-menu absolute right-0 top-full w-80 bg-white rounded-lg shadow-xl border border-gray-100 py-2 z-50">
+                            <a href="/Headers/Experience/" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                Experience Overview
+                            </a>
+
+                            <a href="/Headers/Experience/#research-experience" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                Research Experience
+                            </a>
+
+                            <a href="/Headers/Experience/#professional-experience" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                Professional Experience
+                            </a>
+
+                            <a href="/Headers/Experience/#leadership-service" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                Leadership & Academic Service
+                            </a>
+
+                            <a href="/Headers/Experience/#experience-highlights" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                Experience Highlights
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact -->
+                    <a href="/index.html#contact" class="text-gray-600 hover:text-gray-900">Contact Me</a>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="bg-gradient-to-r from-blue-600 via-blue-700 to-blue-900 text-white">
+        <div class="container mx-auto px-6 py-20 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                Experience & Academic Service
+            </h1>
+
+            <p class="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
+                Research, teaching, technical, professional, leadership, and academic service experience across PEM fuel cell catalyst materials, NASA L’SPACE work, finite element analysis, CAD instruction, graduate advocacy, and engineering organizations.
+            </p>
+        </div>
+    </section>
+
+    <!-- Research Experience -->
+    <section id="research-experience" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-4 text-gray-800">
+                Research Experience
+            </h2>
+
+            <p class="text-gray-600 text-center max-w-2xl mx-auto mb-12">
+                Research roles focused on catalyst materials, aerospace systems, proposal development, materials characterization, and engineering design.
+            </p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+                <!-- Carbon Materials for PEM Fuel Cell Catalysts -->
+                <div class="bg-white rounded-lg shadow-md p-8 hover:shadow-xl transition transform hover:-translate-y-1">
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold text-gray-800">
+                            Researcher: Carbon Materials for PEM Fuel Cell Catalysts
+                        </h3>
+                        <p class="text-blue-600 font-semibold mt-1">
+                            Western Michigan University
+                        </p>
+                        <p class="text-gray-500 text-sm">
+                            April 2024 – Present
+                        </p>
+                    </div>
+
+                    <ul class="text-gray-600 space-y-3 mb-6">
+                        <li>• Design and synthesize polyoxometalate-doped carbon catalyst materials for PEM fuel cells.</li>
+                        <li>• Perform physicochemical and electrochemical characterization using FTIR, BET, SEM, Raman, XRD, CV, and LSV.</li>
+                        <li>• Establish structure-property relationships between microstructure, surface chemistry, and catalytic performance.</li>
+                    </ul>
+
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">PEM Fuel Cells</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Catalyst Materials</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Characterization</span>
+                    </div>
+                </div>
+
+                <!-- CURIE-S / NASA L'SPACE -->
+                <div class="bg-white rounded-lg shadow-md p-8 hover:shadow-xl transition transform hover:-translate-y-1">
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold text-gray-800">
+                            Materials Scientist & Engineer
+                        </h3>
+                        <p class="text-blue-600 font-semibold mt-1">
+                            CURIE-S / NASA L’SPACE Program
+                        </p>
+                        <p class="text-gray-500 text-sm">
+                            May 2024 – December 2025
+                        </p>
+                    </div>
+
+                    <ul class="text-gray-600 space-y-3 mb-6">
+                        <li>• Lead materials, manufacturing, and design work for a NASA-funded proposal securing $10,000 in funding.</li>
+                        <li>• Contributed TX12 expertise in materials, structures, manufacturing, ceramics, chemistry, and additive manufacturing.</li>
+                        <li>• Supported proposal development, technical research, and Siemens NX-based design work.</li>
+                    </ul>
+
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">NASA L’SPACE</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Materials</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Siemens NX</span>
+                    </div>
+                </div>
+
+                <!-- Dominican QSat -->
+                <div class="bg-white rounded-lg shadow-md p-8 hover:shadow-xl transition transform hover:-translate-y-1">
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold text-gray-800">
+                            Research Assistant: Dominican QSat
+                        </h3>
+                        <p class="text-blue-600 font-semibold mt-1">
+                            Instituto Tecnológico de Santo Domingo
+                        </p>
+                        <p class="text-gray-500 text-sm">
+                            January 2023 – July 2023
+                        </p>
+                    </div>
+
+                    <ul class="text-gray-600 space-y-3 mb-6">
+                        <li>• Identified on-board processing methods to be implemented on the Dominican QSat.</li>
+                        <li>• Investigated satellite studies and imaging used in algae and sargassum monitoring.</li>
+                        <li>• Reported summarized findings to the Aerospace Science office.</li>
+                    </ul>
+
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Aerospace Systems</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Satellite Research</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Remote Sensing</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section id="professional-experience" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-4 text-gray-800">
+                Professional Experience
+            </h2>
+
+            <p class="text-gray-600 text-center max-w-2xl mx-auto mb-12">
+                Teaching, outreach, and operations roles involving structural mechanics instruction, CAD support, graduate student engagement, and technical documentation.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- Teaching Assistant WMU -->
+                <div class="bg-gray-50 rounded-lg shadow-md p-8 hover:shadow-xl transition transform hover:-translate-y-1">
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold text-gray-800">
+                            Teaching Assistant
+                        </h3>
+                        <p class="text-blue-600 font-semibold mt-1">
+                            College of Engineering and Applied Sciences, WMU
+                        </p>
+                        <p class="text-gray-500 text-sm">
+                            August 2025 – Present
+                        </p>
+                    </div>
+
+                    <ul class="text-gray-600 space-y-3 mb-6">
+                        <li>• Assisted a class of 60 students with understanding advanced Structural Mechanics concepts.</li>
+                        <li>• Guided students with Finite Element Analysis projects using Abaqus.</li>
+                        <li>• Graded weekly homework assignments and helped create problems.</li>
+                    </ul>
+
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Structural Mechanics</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Abaqus</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Teaching</span>
+                    </div>
+                </div>
+
+                <!-- Graduate Student Ambassador -->
+                <div class="bg-gray-50 rounded-lg shadow-md p-8 hover:shadow-xl transition transform hover:-translate-y-1">
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold text-gray-800">
+                            Graduate Student Ambassador
+                        </h3>
+                        <p class="text-blue-600 font-semibold mt-1">
+                            Graduate College, WMU
+                        </p>
+                        <p class="text-gray-500 text-sm">
+                            August 2024 – Present
+                        </p>
+                    </div>
+
+                    <ul class="text-gray-600 space-y-3 mb-6">
+                        <li>• Represented the Graduate College at open house and promotional events.</li>
+                        <li>• Gave tours and answered questions for prospective graduate students.</li>
+                        <li>• Met with deans, department chairs, and academic advisors to discuss programs.</li>
+                    </ul>
+
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Graduate Outreach</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Communication</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Recruitment</span>
+                    </div>
+                </div>
+
+                <!-- Teaching Assistant INTEC -->
+                <div class="bg-gray-50 rounded-lg shadow-md p-8 hover:shadow-xl transition transform hover:-translate-y-1">
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold text-gray-800">
+                            Teaching Assistant
+                        </h3>
+                        <p class="text-blue-600 font-semibold mt-1">
+                            Instituto Tecnológico de Santo Domingo
+                        </p>
+                        <p class="text-gray-500 text-sm">
+                            August 2022 – July 2023
+                        </p>
+                    </div>
+
+                    <ul class="text-gray-600 space-y-3 mb-6">
+                        <li>• Assisted students in mastering computer-aided design software.</li>
+                        <li>• Explained technical drawing, geometric dimensioning, and tolerancing concepts.</li>
+                        <li>• Coached students in preparation for CSWA and CSWP exams.</li>
+                    </ul>
+
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">CAD</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">GD&T</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">SolidWorks</span>
+                    </div>
+                </div>
+
+                <!-- Operations and Logistics Intern -->
+                <div class="bg-gray-50 rounded-lg shadow-md p-8 hover:shadow-xl transition transform hover:-translate-y-1">
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold text-gray-800">
+                            Operation and Logistics Intern
+                        </h3>
+                        <p class="text-blue-600 font-semibold mt-1">
+                            Instituto Tecnológico de Santo Domingo
+                        </p>
+                        <p class="text-gray-500 text-sm">
+                            November 2022 – January 2023
+                        </p>
+                    </div>
+
+                    <ul class="text-gray-600 space-y-3 mb-6">
+                        <li>• Cataloged extensive documentation in a digital database and physical location.</li>
+                        <li>• Created a digital database to facilitate access, visualization, and location of files.</li>
+                        <li>• Maintained confidentiality standards under NDA guidelines.</li>
+                    </ul>
+
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Logistics</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Database Management</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Documentation</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership & Academic Service -->
+    <section id="leadership-service" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">
+                Leadership & Academic Service
+            </h2>
+
+            <div class="flex flex-col space-y-6">
+
+                <!-- Graduate Student Association -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transition-shadow">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-1/4 flex items-center justify-center p-6 bg-white">
                             <img 
                                 src="https://luisjacobo2301.github.io/Images/WSA%20Logo.JPG?raw=true" 
                                 alt="Graduate Student Association" 
-                                class="object-contain"
-                                style="width: 170px; height: 170px; transform: scale(1.45);"
+                                class="w-full h-64 object-contain"
+                                style="transform: scale(1.45);"
                             >
                         </div>
-                    </div>
 
-                    <div class="p-6 md:w-3/4">
-                        <h3 class="text-xl font-bold mb-2">Graduate Student Association</h3>
-                        <p class="text-gray-500 mb-2">President | April 2026 – Present</p>
-                        <p class="text-gray-600 mb-4">
-                            Represent graduate student interests in meetings with university leadership, faculty, and administrative offices. Lead executive board initiatives focused on graduate student advocacy, engagement, and campus-wide support.
-                        </p>
+                        <div class="p-6 md:w-3/4">
+                            <h3 class="text-xl font-bold mb-2">Graduate Student Association</h3>
+                            <p class="text-gray-500 mb-2">President | April 2026 – Present</p>
+                            <p class="text-gray-600 mb-4">
+                                Represent graduate student interests in meetings with university leadership, faculty, and administrative offices. Lead executive board initiatives focused on graduate student advocacy, engagement, and campus-wide support.
+                            </p>
 
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Graduate Advocacy</span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Executive Leadership</span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Campus Support</span>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Graduate Advocacy</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Executive Leadership</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Campus Support</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Solid Mechanics and Structures Hub -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transition-shadow">
-                <div class="flex flex-col md:flex-row">
-                    <div class="md:w-1/4 flex items-center justify-center p-8 bg-white">
-                        <div class="w-56 h-48 flex items-center justify-center overflow-hidden">
+                <!-- Solid Mechanics and Structures Hub -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transition-shadow">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-1/4 flex items-center justify-center p-6 bg-white">
                             <img 
                                 src="https://luisjacobo2301.github.io/Images/SMASH%20Logo.JPG?raw=true" 
                                 alt="Solid Mechanics and Structures Hub" 
-                                class="object-contain"
-                                style="width: 180px; height: 180px;"
+                                class="w-full h-64 object-contain"
                             >
                         </div>
-                    </div>
 
-                    <div class="p-6 md:w-3/4">
-                        <h3 class="text-xl font-bold mb-2">Solid Mechanics and Structures Hub</h3>
-                        <p class="text-gray-500 mb-2">Co-Founder, Vice President, and R&D Engineer | April 2024 – Present</p>
-                        <p class="text-gray-600 mb-4">
-                            Founded a registered student organization at Western Michigan University. Secure yearly funding for 3D printing machines, materials, parts, tools, and resources supporting student-led engineering projects.
-                        </p>
+                        <div class="p-6 md:w-3/4">
+                            <h3 class="text-xl font-bold mb-2">Solid Mechanics and Structures Hub</h3>
+                            <p class="text-gray-500 mb-2">Co-Founder, Vice President, and R&D Engineer | April 2024 – Present</p>
+                            <p class="text-gray-600 mb-4">
+                                Founded a registered student organization at Western Michigan University. Secure yearly funding for 3D printing machines, materials, parts, tools, and resources supporting student-led engineering projects.
+                            </p>
 
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Structural Mechanics</span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">3D Printing</span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">R&D</span>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Structural Mechanics</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">3D Printing</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">R&D</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Western Student Association -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transition-shadow">
-                <div class="flex flex-col md:flex-row">
-                    <div class="md:w-1/4 flex items-center justify-center p-8 bg-white">
-                        <div class="w-56 h-48 flex items-center justify-center overflow-hidden">
+                <!-- Western Student Association Combined -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transition-shadow">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-1/4 flex items-center justify-center p-6 bg-white">
                             <img 
                                 src="https://luisjacobo2301.github.io/Images/WSA%20Logo.JPG?raw=true" 
                                 alt="Western Student Association" 
-                                class="object-contain"
-                                style="width: 170px; height: 170px; transform: scale(1.45);"
+                                class="w-full h-64 object-contain"
+                                style="transform: scale(1.45);"
                             >
                         </div>
-                    </div>
 
-                    <div class="p-6 md:w-3/4">
-                        <h3 class="text-xl font-bold mb-2">Western Student Association</h3>
+                        <div class="p-6 md:w-3/4">
+                            <h3 class="text-xl font-bold mb-2">Western Student Association</h3>
 
-                        <p class="text-gray-500 mb-1">Director of Allocations | April 2025 – May 2026</p>
-                        <p class="text-gray-500 mb-3">Academic Chair | November 2024 – April 2025</p>
+                            <p class="text-gray-500 mb-1">Director of Allocations | April 2025 – May 2026</p>
+                            <p class="text-gray-500 mb-3">Academic Chair | November 2024 – April 2025</p>
 
-                        <p class="text-gray-600 mb-4">
-                            Oversaw the fair allocation of $1,000,000 in student funds to student organizations, created and updated SOPs and bylaws, and chaired the Allocations Commission. Represented the Graduate College in student government and was recognized by the Speaker of the Assembly for contributions to student government and campus leadership.
-                        </p>
+                            <p class="text-gray-600 mb-4">
+                                Oversaw the fair allocation of $1,000,000 in student funds to student organizations, created and updated SOPs and bylaws, and chaired the Allocations Commission. Represented the Graduate College in student government and was recognized by the Speaker of the Assembly for contributions to student government and campus leadership.
+                            </p>
 
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Student Government</span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Budget Oversight</span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Policy</span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Graduate Representation</span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Student Advocacy</span>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Student Government</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Budget Oversight</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Policy</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Graduate Representation</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Student Advocacy</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Society of Hispanic Professional Engineers -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transition-shadow">
-                <div class="flex flex-col md:flex-row">
-                    <div class="md:w-1/4 flex items-center justify-center p-8 bg-white">
-                        <div class="w-56 h-48 flex items-center justify-center overflow-hidden">
+                <!-- Society of Hispanic Professional Engineers -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transition-shadow">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-1/4 flex items-center justify-center p-6 bg-white">
                             <img 
                                 src="https://luisjacobo2301.github.io/Images/SHPE%20Logo.jpg?raw=true" 
                                 alt="Society of Hispanic Professional Engineers" 
-                                class="object-contain"
-                                style="width: 180px; height: 180px;"
+                                class="w-full h-64 object-contain"
                             >
                         </div>
-                    </div>
 
-                    <div class="p-6 md:w-3/4">
-                        <h3 class="text-xl font-bold mb-2">Society of Hispanic Professional Engineers</h3>
-                        <p class="text-gray-500 mb-2">President | February 2024 – April 2025</p>
-                        <p class="text-gray-600 mb-4">
-                            Led a registered student organization with over 60 active members. Networked with RSOs, companies, and university partners to secure over $21,000 in funding and encouraged professional development through workshops, networking, and mentorship.
-                        </p>
+                        <div class="p-6 md:w-3/4">
+                            <h3 class="text-xl font-bold mb-2">Society of Hispanic Professional Engineers</h3>
+                            <p class="text-gray-500 mb-2">President | February 2024 – April 2025</p>
+                            <p class="text-gray-600 mb-4">
+                                Led a registered student organization with over 60 active members. Networked with RSOs, companies, and university partners to secure over $21,000 in funding and encouraged professional development through workshops, networking, and mentorship.
+                            </p>
 
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Leadership</span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Professional Development</span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Fundraising</span>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Leadership</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Professional Development</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Fundraising</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Western Aerospace Launch Initiative -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transition-shadow">
-                <div class="flex flex-col md:flex-row">
-                    <div class="md:w-1/4 flex items-center justify-center p-8 bg-white">
-                        <div class="w-56 h-48 flex items-center justify-center overflow-hidden">
+                <!-- Western Aerospace Launch Initiative -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transition-shadow">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-1/4 flex items-center justify-center p-6 bg-white">
                             <img 
                                 src="https://luisjacobo2301.github.io/Images/WALI%20Logo.JPG?raw=true" 
                                 alt="Western Aerospace Launch Initiative" 
-                                class="object-contain"
-                                style="width: 180px; height: 180px;"
+                                class="w-full h-64 object-contain"
                             >
                         </div>
-                    </div>
 
-                    <div class="p-6 md:w-3/4">
-                        <h3 class="text-xl font-bold mb-2">Western Aerospace Launch Initiative</h3>
-                        <p class="text-gray-500 mb-2">Team Member and Mechanical Designer | August 2023 – April 2025</p>
-                        <p class="text-gray-600 mb-4">
-                            Created, optimized, and tested the CAD model for the CanSat mission. Served as a member of the structural and thermal subsystems for the CubeSat mission.
-                        </p>
+                        <div class="p-6 md:w-3/4">
+                            <h3 class="text-xl font-bold mb-2">Western Aerospace Launch Initiative</h3>
+                            <p class="text-gray-500 mb-2">Team Member and Mechanical Designer | August 2023 – April 2025</p>
+                            <p class="text-gray-600 mb-4">
+                                Created, optimized, and tested the CAD model for the CanSat mission. Served as a member of the structural and thermal subsystems for the CubeSat mission.
+                            </p>
 
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Aerospace Design</span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">CAD</span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">CubeSat</span>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Aerospace Design</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">CAD</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">CubeSat</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <!-- Experience Highlights -->
+    <section id="experience-highlights" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
+                Experience Highlights
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <div class="bg-gray-50 rounded-lg p-6 shadow-sm">
+                    <p class="text-4xl font-bold text-blue-600 mb-2">
+                        $10,000
+                    </p>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">
+                        NASA-Funded Proposal
+                    </h3>
+                    <p class="text-gray-600">
+                        Supported materials, manufacturing, design, and proposal development for CURIE-S / NASA L’SPACE.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-6 shadow-sm">
+                    <p class="text-4xl font-bold text-blue-600 mb-2">
+                        $1M
+                    </p>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">
+                        Student Funds Oversight
+                    </h3>
+                    <p class="text-gray-600">
+                        Oversaw the allocation of student organization funding through student government.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-6 shadow-sm">
+                    <p class="text-4xl font-bold text-blue-600 mb-2">
+                        $21K+
+                    </p>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">
+                        SHPE Funding Secured
+                    </h3>
+                    <p class="text-gray-600">
+                        Secured funding through university partnerships, RSOs, and company networking.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; <span id="year"></span> Luis Jacobo Mejia. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
