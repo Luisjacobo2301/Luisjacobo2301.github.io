@@ -14,25 +14,102 @@
         html {
             scroll-behavior: smooth;
         }
+
+        .dropdown-menu {
+            display: none;
+        }
+
+        .dropdown:hover .dropdown-menu,
+        .dropdown:focus-within .dropdown-menu {
+            display: block;
+        }
     </style>
 </head>
 
-<body class="bg-gray-100 pt-20">
+<body class="bg-gray-100">
 
     <!-- Header -->
-    <header class="fixed top-0 left-0 right-0 bg-white shadow-lg z-50">
+    <header class="sticky top-0 left-0 right-0 bg-white z-50">
         <div class="container mx-auto px-6 py-4">
             <nav class="flex items-center justify-between">
                 <a href="/index.html" class="text-3xl font-bold text-gray-800">
                     Luis Jacobo Mejia
                 </a>
 
-                <div class="space-x-4 hidden md:block">
+                <div class="space-x-6 hidden md:flex items-center">
+
+                    <!-- Home -->
                     <a href="/index.html" class="text-gray-600 hover:text-gray-900">Home</a>
-                    <a href="/Headers/Projects/" class="text-gray-600 hover:text-gray-900">Projects</a>
-                    <a href="/Headers/Experience/" class="text-blue-600 font-semibold">Experience</a>
+
+                    <!-- Projects Dropdown -->
+                    <div class="relative dropdown py-2">
+                        <a href="/Headers/Projects/" class="text-gray-600 hover:text-gray-900">
+                            Projects
+                        </a>
+
+                        <div class="dropdown-menu absolute right-0 top-full w-80 bg-white rounded-lg shadow-xl border border-gray-100 py-2 z-50">
+                            <a href="/Headers/Projects/" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                Projects Overview
+                            </a>
+
+                            <a href="/projects/CURIE'S/" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                CURIE-S / NASA L’SPACE
+                            </a>
+
+                            <a href="/projects/PEM/" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                PEM Fuel Cell Catalyst Materials
+                            </a>
+
+                            <a href="/projects/3DPAC/" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                3D Printed Aircraft Competition
+                            </a>
+
+                            <a href="/projects/FDM/" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                FDM Structural Analysis
+                            </a>
+
+                            <a href="/projects/Fuselage/" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                Fuselage FEA Analysis
+                            </a>
+
+                            <a href="/projects/PLA/" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                Mechanical Properties of PLA
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Experience Dropdown -->
+                    <div class="relative dropdown py-2">
+                        <a href="/Headers/Experience/" class="text-blue-600 font-semibold">
+                            Experience
+                        </a>
+
+                        <div class="dropdown-menu absolute right-0 top-full w-80 bg-white rounded-lg shadow-xl border border-gray-100 py-2 z-50">
+                            <a href="/Headers/Experience/" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                Experience Overview
+                            </a>
+
+                            <a href="/Headers/Experience/#research-experience" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                Research Experience
+                            </a>
+
+                            <a href="/Headers/Experience/#professional-experience" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                Professional Experience
+                            </a>
+
+                            <a href="/Headers/Experience/#leadership-service" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                Leadership & Academic Service
+                            </a>
+
+                            <a href="/Headers/Experience/#experience-highlights" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                Experience Highlights
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact -->
                     <a href="/index.html#contact" class="text-gray-600 hover:text-gray-900">Contact Me</a>
-                    <a href="/Headers/old/" class="text-gray-600 hover:text-gray-900">Old</a>
+
                 </div>
             </nav>
         </div>
@@ -52,7 +129,7 @@
     </section>
 
     <!-- Research Experience -->
-    <section class="py-20 bg-gray-100">
+    <section id="research-experience" class="py-20 bg-gray-100">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-4 text-gray-800">
                 Research Experience
@@ -150,7 +227,7 @@
     </section>
 
     <!-- Professional Experience -->
-    <section class="py-20 bg-white">
+    <section id="professional-experience" class="py-20 bg-white">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-4 text-gray-800">
                 Professional Experience
@@ -275,177 +352,152 @@
     </section>
 
     <!-- Leadership & Academic Service -->
-    <section class="py-20 bg-gray-100">
+    <section id="leadership-service" class="py-20 bg-gray-50">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-4 text-gray-800">
+            <h2 class="text-3xl font-bold text-center mb-12">
                 Leadership & Academic Service
             </h2>
 
-            <p class="text-gray-600 text-center max-w-2xl mx-auto mb-12">
-                Leadership roles focused on graduate student advocacy, engineering organization development, student funding, professional development, and aerospace design.
-            </p>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="flex flex-col space-y-6">
 
                 <!-- Graduate Student Association -->
-                <div class="bg-white rounded-lg shadow-md p-8 hover:shadow-xl transition transform hover:-translate-y-1">
-                    <div class="mb-4">
-                        <h3 class="text-xl font-bold text-gray-800">
-                            Graduate Student Association
-                        </h3>
-                        <p class="text-blue-600 font-semibold mt-1">
-                            President
-                        </p>
-                        <p class="text-gray-500 text-sm">
-                            April 2026 – Present
-                        </p>
-                    </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transition-shadow">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-1/4 bg-blue-50 flex items-center justify-center p-10">
+                            <div class="text-center">
+                                <p class="text-5xl font-bold text-blue-700">GSA</p>
+                                <p class="text-sm font-semibold text-blue-600 mt-2">Graduate Student Association</p>
+                            </div>
+                        </div>
 
-                    <ul class="text-gray-600 space-y-3 mb-6">
-                        <li>• Represent graduate student interests in meetings with university leadership, faculty, and administrative offices.</li>
-                        <li>• Lead executive board initiatives focused on graduate student advocacy, engagement, and campus-wide support.</li>
-                        <li>• Manage organizational priorities, communication, and funded initiatives serving the graduate student body.</li>
-                    </ul>
+                        <div class="p-6 md:w-3/4">
+                            <h3 class="text-xl font-bold mb-2">Graduate Student Association</h3>
+                            <p class="text-gray-500 mb-2">President | April 2026 – Present</p>
+                            <p class="text-gray-600 mb-4">
+                                Represent graduate student interests in meetings with university leadership, faculty, and administrative offices. Lead executive board initiatives focused on graduate student advocacy, engagement, and campus-wide support.
+                            </p>
 
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Graduate Advocacy</span>
-                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Executive Leadership</span>
-                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Campus Support</span>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Graduate Advocacy</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Executive Leadership</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Campus Support</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- SMASH -->
-                <div class="bg-white rounded-lg shadow-md p-8 hover:shadow-xl transition transform hover:-translate-y-1">
-                    <div class="mb-4">
-                        <h3 class="text-xl font-bold text-gray-800">
-                            Solid Mechanics and Structures Hub
-                        </h3>
-                        <p class="text-blue-600 font-semibold mt-1">
-                            Co-Founder, Vice President, and R&D Engineer
-                        </p>
-                        <p class="text-gray-500 text-sm">
-                            April 2024 – Present
-                        </p>
-                    </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transition-shadow">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-1/4">
+                            <img src="https://luisjacobo2301.github.io/Images/SMASH Logo.JPG?raw=true" alt="SMASH" class="w-full h-full object-cover">
+                        </div>
 
-                    <ul class="text-gray-600 space-y-3 mb-6">
-                        <li>• Founded a registered student organization at Western Michigan University.</li>
-                        <li>• Secure yearly funding for 3D printing machines, materials, parts, tools, and resources supporting student-led engineering projects.</li>
-                        <li>• Apply mechanical design, structural mechanics, and 3D printing skills to support aircraft design and optimization for the 3D Printed Aircraft Competition.</li>
-                    </ul>
+                        <div class="p-6 md:w-3/4">
+                            <h3 class="text-xl font-bold mb-2">Solid Mechanics and Structures Hub</h3>
+                            <p class="text-gray-500 mb-2">Co-Founder, Vice President, and R&D Engineer | April 2024 – Present</p>
+                            <p class="text-gray-600 mb-4">
+                                Founded a registered student organization at Western Michigan University. Secure yearly funding for 3D printing machines, materials, parts, tools, and resources supporting student-led engineering projects.
+                            </p>
 
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Structural Mechanics</span>
-                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">3D Printing</span>
-                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">R&D</span>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Structural Mechanics</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">3D Printing</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">R&D</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Western Student Association - Allocations -->
-                <div class="bg-white rounded-lg shadow-md p-8 hover:shadow-xl transition transform hover:-translate-y-1">
-                    <div class="mb-4">
-                        <h3 class="text-xl font-bold text-gray-800">
-                            Western Student Association
-                        </h3>
-                        <p class="text-blue-600 font-semibold mt-1">
-                            Director of Allocations
-                        </p>
-                        <p class="text-gray-500 text-sm">
-                            April 2025 – May 2026
-                        </p>
-                    </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transition-shadow">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-1/4">
+                            <img src="https://luisjacobo2301.github.io/Images/WSA Logo.JPG?raw=true" alt="Western Student Association" class="w-full h-full object-cover">
+                        </div>
 
-                    <ul class="text-gray-600 space-y-3 mb-6">
-                        <li>• Oversaw the fair allocation of $1,000,000 in student funds to student organizations.</li>
-                        <li>• Created and updated SOPs and bylaws for the allocation of student funds.</li>
-                        <li>• Chaired the Allocations Commission and served in the executive branch of student government.</li>
-                    </ul>
+                        <div class="p-6 md:w-3/4">
+                            <h3 class="text-xl font-bold mb-2">Western Student Association</h3>
+                            <p class="text-gray-500 mb-2">Director of Allocations | April 2025 – May 2026</p>
+                            <p class="text-gray-600 mb-4">
+                                Oversaw the fair allocation of $1,000,000 in student funds to student organizations. Created and updated SOPs and bylaws for the allocation of student funds and chaired the Allocations Commission.
+                            </p>
 
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Student Government</span>
-                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Budget Oversight</span>
-                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Policy</span>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Student Government</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Budget Oversight</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Policy</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Western Student Association - Academic Chair -->
-                <div class="bg-white rounded-lg shadow-md p-8 hover:shadow-xl transition transform hover:-translate-y-1">
-                    <div class="mb-4">
-                        <h3 class="text-xl font-bold text-gray-800">
-                            Western Student Association
-                        </h3>
-                        <p class="text-blue-600 font-semibold mt-1">
-                            Academic Chair
-                        </p>
-                        <p class="text-gray-500 text-sm">
-                            November 2024 – April 2025
-                        </p>
-                    </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transition-shadow">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-1/4">
+                            <img src="https://luisjacobo2301.github.io/Images/WSA Logo.JPG?raw=true" alt="Western Student Association" class="w-full h-full object-cover">
+                        </div>
 
-                    <ul class="text-gray-600 space-y-3 mb-6">
-                        <li>• Participated in Student Body Assembly meetings and student government initiatives.</li>
-                        <li>• Represented the Graduate College within student government and advocated for graduate student concerns.</li>
-                        <li>• Recognized by the Speaker of the Assembly for contributions to student government and campus leadership.</li>
-                    </ul>
+                        <div class="p-6 md:w-3/4">
+                            <h3 class="text-xl font-bold mb-2">Western Student Association</h3>
+                            <p class="text-gray-500 mb-2">Academic Chair | November 2024 – April 2025</p>
+                            <p class="text-gray-600 mb-4">
+                                Participated in Student Body Assembly meetings and student government initiatives. Represented the Graduate College and was recognized by the Speaker of the Assembly for contributions to student government and campus leadership.
+                            </p>
 
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Academic Affairs</span>
-                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Graduate Representation</span>
-                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Student Advocacy</span>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Academic Affairs</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Graduate Representation</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Student Advocacy</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- SHPE -->
-                <div class="bg-white rounded-lg shadow-md p-8 hover:shadow-xl transition transform hover:-translate-y-1">
-                    <div class="mb-4">
-                        <h3 class="text-xl font-bold text-gray-800">
-                            Society of Hispanic Professional Engineers
-                        </h3>
-                        <p class="text-blue-600 font-semibold mt-1">
-                            President
-                        </p>
-                        <p class="text-gray-500 text-sm">
-                            February 2024 – April 2025
-                        </p>
-                    </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transition-shadow">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-1/4">
+                            <img src="https://luisjacobo2301.github.io/Images/SHPE Logo.jpg?raw=true" alt="SHPE" class="w-full h-full object-cover">
+                        </div>
 
-                    <ul class="text-gray-600 space-y-3 mb-6">
-                        <li>• Led a registered student organization with over 60 active members.</li>
-                        <li>• Networked with RSOs, companies, and university partners to secure over $21,000 in funding.</li>
-                        <li>• Encouraged professional development through workshops, networking activities, and mentorship.</li>
-                    </ul>
+                        <div class="p-6 md:w-3/4">
+                            <h3 class="text-xl font-bold mb-2">Society of Hispanic Professional Engineers</h3>
+                            <p class="text-gray-500 mb-2">President | February 2024 – April 2025</p>
+                            <p class="text-gray-600 mb-4">
+                                Led a registered student organization with over 60 active members. Networked with RSOs, companies, and university partners to secure over $21,000 in funding and encouraged professional development through workshops, networking, and mentorship.
+                            </p>
 
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Professional Development</span>
-                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Mentorship</span>
-                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Fundraising</span>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Leadership</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Professional Development</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Fundraising</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- WALI -->
-                <div class="bg-white rounded-lg shadow-md p-8 hover:shadow-xl transition transform hover:-translate-y-1">
-                    <div class="mb-4">
-                        <h3 class="text-xl font-bold text-gray-800">
-                            Western Aerospace Launch Initiative
-                        </h3>
-                        <p class="text-blue-600 font-semibold mt-1">
-                            Team Member and Mechanical Designer
-                        </p>
-                        <p class="text-gray-500 text-sm">
-                            August 2023 – April 2025
-                        </p>
-                    </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transition-shadow">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-1/4">
+                            <img src="https://luisjacobo2301.github.io/Images/WALI Logo.JPG?raw=true" alt="WALI" class="w-full h-full object-cover">
+                        </div>
 
-                    <ul class="text-gray-600 space-y-3 mb-6">
-                        <li>• Created, optimized, and tested the CAD model for the CanSat mission.</li>
-                        <li>• Served as a member of the structural subsystem for the CubeSat mission.</li>
-                        <li>• Served as a member of the thermal subsystem for the CubeSat mission.</li>
-                    </ul>
+                        <div class="p-6 md:w-3/4">
+                            <h3 class="text-xl font-bold mb-2">Western Aerospace Launch Initiative</h3>
+                            <p class="text-gray-500 mb-2">Team Member and Mechanical Designer | August 2023 – April 2025</p>
+                            <p class="text-gray-600 mb-4">
+                                Created, optimized, and tested the CAD model for the CanSat mission. Served as a member of the structural and thermal subsystems for the CubeSat mission.
+                            </p>
 
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Aerospace Design</span>
-                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">CAD</span>
-                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">CubeSat</span>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Aerospace Design</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">CAD</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">CubeSat</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -454,7 +506,7 @@
     </section>
 
     <!-- Experience Highlights -->
-    <section class="py-20 bg-white">
+    <section id="experience-highlights" class="py-20 bg-white">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
                 Experience Highlights
