@@ -14,28 +14,102 @@
         html {
             scroll-behavior: smooth;
         }
+
+        .dropdown-menu {
+            display: none;
+        }
+
+        .dropdown:hover .dropdown-menu,
+        .dropdown:focus-within .dropdown-menu {
+            display: block;
+        }
     </style>
 </head>
 
-<body class="bg-gray-100 pt-20">
+<body class="bg-gray-100">
 
     <!-- Header -->
-    <header class="fixed top-0 left-0 right-0 bg-white shadow-lg z-50">
+    <header class="sticky top-0 left-0 right-0 bg-white z-50">
         <div class="container mx-auto px-6 py-4">
             <nav class="flex items-center justify-between">
                 <a href="/index.html" class="text-3xl font-bold text-gray-800">
                     Luis Jacobo Mejia
                 </a>
 
-                <div class="space-x-4 hidden md:block">
+                <div class="space-x-6 hidden md:flex items-center">
+
+                    <!-- Home -->
                     <a href="/index.html" class="text-gray-600 hover:text-gray-900">Home</a>
-                    <a href="/Headers/research.html" class="text-gray-600 hover:text-gray-900">Research</a>
-                    <a href="/Headers/Projects/" class="text-blue-600 font-semibold">Projects</a>
-                    <a href="/Headers/experience.html" class="text-gray-600 hover:text-gray-900">Experience</a>
-                    <a href="/Headers/leadership.html" class="text-gray-600 hover:text-gray-900">Leadership</a>
-                    <a href="/Headers/education.html" class="text-gray-600 hover:text-gray-900">Education</a>
-                    <a href="/Headers/cv.html" class="text-gray-600 hover:text-gray-900">CV</a>
-                    <a href="/Headers/old/" class="text-gray-600 hover:text-gray-900">Old</a>
+
+                    <!-- Projects Dropdown -->
+                    <div class="relative dropdown py-2">
+                        <a href="/Headers/Projects/" class="text-blue-600 font-semibold">
+                            Projects
+                        </a>
+
+                        <div class="dropdown-menu absolute right-0 top-full w-80 bg-white rounded-lg shadow-xl border border-gray-100 py-2 z-50">
+                            <a href="/Headers/Projects/" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                Projects Overview
+                            </a>
+
+                            <a href="/projects/CURIE'S/" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                CURIE-S / NASA L’SPACE
+                            </a>
+
+                            <a href="/projects/PEM/" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                PEM Fuel Cell Catalyst Materials
+                            </a>
+
+                            <a href="/projects/3DPAC/" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                3D Printed Aircraft Competition
+                            </a>
+
+                            <a href="/projects/FDM/" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                FDM Structural Analysis
+                            </a>
+
+                            <a href="/projects/Fuselage/" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                Fuselage FEA Analysis
+                            </a>
+
+                            <a href="/projects/PLA/" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                Mechanical Properties of PLA
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Experience Dropdown -->
+                    <div class="relative dropdown py-2">
+                        <a href="/Headers/Experience/" class="text-gray-600 hover:text-gray-900">
+                            Experience
+                        </a>
+
+                        <div class="dropdown-menu absolute right-0 top-full w-80 bg-white rounded-lg shadow-xl border border-gray-100 py-2 z-50">
+                            <a href="/Headers/Experience/" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                Experience Overview
+                            </a>
+
+                            <a href="/Headers/Experience/#research-experience" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                Research Experience
+                            </a>
+
+                            <a href="/Headers/Experience/#professional-experience" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                Professional Experience
+                            </a>
+
+                            <a href="/Headers/Experience/#leadership-service" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                Leadership & Academic Service
+                            </a>
+
+                            <a href="/Headers/Experience/#experience-highlights" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                Experience Highlights
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact -->
+                    <a href="/index.html#contact" class="text-gray-600 hover:text-gray-900">Contact Me</a>
+
                 </div>
             </nav>
         </div>
